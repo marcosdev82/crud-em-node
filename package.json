@@ -1,0 +1,33 @@
+{
+  "name": "node-clientes",
+  "version": "1.0.0",
+  "description": "Esse projeto é um cadastro de cliente",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000",
+    "init:sass": "node-sass public/scss/custom-sass.scss public/css/bootstrap.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "acl": "^0.4.11",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.0-alpha3",
+    "bootstrap-icons": "^1.10.4",
+    "connect": "^3.7.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
+    "flash": "^1.1.0",
+    "mysql2": "^3.2.3",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.31.0",
+    "session-file-store": "^1.5.0"
+  }
+}
+ 

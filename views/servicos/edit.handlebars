@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>Editando serviço</h2>
+    <a class="btn btn-primary btn-sm" href="/servicos/dashboard" class="voltar">Voltar</a>
+    <hr>
+    <form class="needs-validation" action="/servicos/edit" method="POST" novalidate>
+        <input type="hidden" name="id" value="{{servico.id}}" class="mb-3">
+        <div class="mb-3">
+            <label for="name" class="form-label">Titulo do servico</label>
+            <input type="text" class="form-control" name="title" value="{{servico.title}}" id="title" placeholder="Titulo do serviço" required>
+        </div>
+        <button type="submit" class="btn btn-md btn-warning">Editar servico</button>
+    </form>
+</div>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
